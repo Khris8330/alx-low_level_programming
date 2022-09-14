@@ -1,8 +1,12 @@
 #include "main.h"
+
 /**
  * print_sign - function to check for a sign of a number
  * @n:  is the int that will use for the argument of the function
- * Return: 0
+ *
+ * Return: 1 if the number is greater than zero,
+ * 		0 if the number is zero,
+ * 		-1 if the number is less than zero.
  */
 int print_sign(int n)
 {
