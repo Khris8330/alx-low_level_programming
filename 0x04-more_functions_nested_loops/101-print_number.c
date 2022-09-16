@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_number - Prints an integer.
- * @n: The integer to be printed.
+ * print_number - Prints a number
+ * @n: The number to print
  */
 void print_number(int n)
 {
@@ -10,13 +11,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		num = -num;
 	}
 
 	if ((num / 10) > 0)
-		print_number(num / 10);
+	print_number(num / 10);
 
-
-	_putchar((num % 10 + '0');
+	putchar((num % 10 + '0');
 }
