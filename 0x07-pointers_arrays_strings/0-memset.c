@@ -1,15 +1,19 @@
 #include "main.h"
-#include <unistd.h>
-
-
 /**
- * _putchar - writes the character c to stdout.
- * @c: The character to print.
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _memset - fills memory with constants byte
+ * @s: string
+ * @b: constant byte
+ * @n: n bytes to fill
+ * Return: pointer to string filled
  */
-int _putchar(char c)
+char *_memset(char *s, char b, unsigned int n)
 {
-	return (write(1, &c, 1));
+	unsigned int i = 0;
+
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
+	return (s);
 }
