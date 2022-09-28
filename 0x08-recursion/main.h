@@ -1,13 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * file: main.h
- * Auth: Kris
- * Desc: Header file containing prototypes for all functions
- * used in the 0x07-recursion directory.
- */
-int _putchar(char c);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
@@ -17,6 +10,13 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
-int is_prime_number(int n);
+int _putchar(char c);
+int find_sqrt(int num, int root);
+int is_divisible(int num, int div);
+int find_strlen(char *s);
+int check_palindrome(char *s, int len, int index);
+int strlen_no_wilds(char *str);
+void iterate_wild(char **wildstr);
+char *postfix_match(char *str, char *postfix);
 
-#endif
+#endif /*MAIN_H*/
